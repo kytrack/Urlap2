@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Űrlap2</title>
+</head>
+
+<p>Alapadatok</p>
+<div>
+    <table>
+        <tr>
+            <td>
+                <form action="name">Teljes neved</form>
+            </td>
+            <td> <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Nemed</td>
+            <td><label> <input type="radio" value="ferfi">Férfi</label>
+                <input type="radio" value="no">Nő
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="email">Email <b>*</b></form>
+            </td>
+            <td> <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="phonenumber">Telefonszám<b>*</b></form>
+            </td>
+
+            <td> <select name="korzet">
+                    <option value="36">36</option>
+                </select>
+                <input type="text" name="telefonszam" id="phonenumber">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="language">Levelezés alapértelmezett nyelve<b>*</b></form>
+            </td>
+            <td><input type="text" list="language"> <datalist id="language">
+                    <option value="Magyar">Magyar</option>
+                    <option value="Angol">Angol</option>
+                    <option value="Német">Német</option>
+            </td> </datalist>
+        </tr>
+        <tr>
+            <td>
+                <form action="date">Születési idő</form>
+            </td>
+            <td><input type="date">
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td id="birthday">Add meg a születésnapodat és várd a meglepetést!</td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Mentés" id="submit">
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>
